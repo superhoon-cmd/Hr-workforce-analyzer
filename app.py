@@ -6,6 +6,7 @@ from analysis import METHODS, validate_csv, aggregate_projects, diagnose_project
 
 st.set_page_config(page_title='프로젝트 인력 불균형 분석', layout='wide')
 st.page_link('pages/2_team_models.py', label='새 팀별 후보모델 1·2·3 및 자동 알고리즘 선택')
+st.page_link('pages/3_roi_limits.py', label='개발조직 FTE 한도 · 직접 입력/엑셀 업로드')
 st.title('프로젝트 인력 불균형 분석')
 st.caption('CSV 업로드 → 관측 업무부담·유사 프로젝트 비교 → 다음 달 OT 예측')
 st.warning('적정인원 정답을 가정하거나 필요·부족 인원 수를 산출하지 않습니다. 표시되는 가능성은 상대적인 점검 신호입니다. 여유 가능성은 납기·품질·산출물 확인이 필요합니다.')
