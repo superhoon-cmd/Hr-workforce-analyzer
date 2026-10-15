@@ -9,6 +9,7 @@ from workforce_models import Settings, normalize_ot, peer_backtest, ot_examples,
 
 st.set_page_config(page_title='팀별 적정인원 후보모델', layout='wide')
 st.title('팀별 적정인원 후보모델')
+st.page_link('pages/3_roi_limits.py', label='개발조직 FTE 한도 · 직접 입력/엑셀 업로드')
 st.caption('모델 1: 시간 환산 · 모델 2: 유사사례 + 분위수 회귀 · 모델 3: 네 알고리즘 자동 비교')
 st.warning('인원범위는 조건부 참고치입니다. 품질·실제 업무범위와 증원 효과는 검증하지 않았으며, 감축 정원이나 인력 변경의 인과효과를 산출하지 않습니다.')
 with st.sidebar:
